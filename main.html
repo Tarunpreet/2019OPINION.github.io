@@ -6,88 +6,9 @@
     <title>2019 OPINION</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta name="google-signin-client_id" content="140143069103-52fmn4ve714ki3ejos6vhjhjp10f3cea.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="main.js"></script>
-    <style>
-        *{
-  margin: 0;
-  padding: 0;
-}
-    html
-    {
-        margin: 0;
-        padding:0;
-        height: 100%;
-        width: 100%;
-        position: relative;
-     }
-     #container
-{
-  min-height: 100%;
-  min-width: 100%;
-  /* border:2px solid black; */
-  margin: 0;
-        padding:0;
-}
-     body
-     {
-    background: url(images/wall2.jpg) no-repeat center center fixed; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-        padding:0;
-        height: 100%;
-        width: 100%;
-        position: relative; 
-
-     }
-     #navbar
-     {
-
-/* Rectangle 3: */
-/* opacity: 0.42;
-background-image:url(images/group.jpg); */
-/* Rectangle 3: */
-/* Rectangle 3: */
-background:rgba(181,126,68,.42);
-border: 1px solid #FFFFFF;
-box-shadow: 0 7px 8px 6px #000000;
-min-width: 100%;
-max-width: 100%;
-  display:block;
-  margin-left: 0%;
- margin:0%;
- text-decoration: none;
-
-     }
-     #navbar>li {
-  display: inline-block;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin-left: 1%;
-  padding-right: 0%;
-  margin-right: 0%;
-  opacity: 1.0;
- 
-}
-a:hover
-{
-color: #FFFFFF;
-}
-a
-{
-    color: #FF8500;
-}
-#content
-{
-    text-align: center;
-  margin-top:34%;
-  margin-bottom: 23%;
-  margin-left:18%;
-  margin-right: 10%;
-}
-     </style>
 </head>
 <body>
     <div id="container">
@@ -115,7 +36,13 @@ a
                 they administer don’t think-Adolf Hitler</h1>
           </div>
       </div>
- 
+    <div class="bg-modal">
+        <div class="bg-content">
+         <span id=sign>SIGN IN</span>
+         <div id="btn"class="g-signin2" data-onsuccess="onSignIn"></div>
+         <div id="btn1"class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+    </div>
      
 </body>
 </html>
