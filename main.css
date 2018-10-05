@@ -87,38 +87,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 
 
 box-shadow: 11px 14px 6px 4px rgba(0,0,0,0.50);
-
+display: none;
 }
 .bg-content
 {
-    width: 500px;
-    height: 400px;
-    background-color: #FFFFFF;
+    width: 450px;
+    height: 300px;
+    background-color:#FFFFFF;
     box-shadow: 9px 11px 6px 4px rgba(0,0,0,0.50);
     border-radius: 1.3%;
     text-align: center;
     padding: 20px;
     position: relative;
 }
-#sign
+ #sign
 {
-    font-size: 30px;
-    font-family:  monospace;
-    
+    width: 170px;
 }
 #btn
 { 
     position: absolute;
     top: 35%;
     left:40%;
+    cursor: pointer;
 }
 #btn1
 { 
     position: absolute;
     top: 60%;
     left:40%;
+    cursor: pointer;
+}
+#cut
+{
+    position: absolute;
+    top:4%;
+    right:2%;
+    width: 27px;
+    
+}
+#open
+{
+    background-color:#00000000;
+    color: #FF8500;
+    border: #00000000;
+    cursor: pointer;
+}
+#open:hover
+{
+    color: #FFFFFF;
+}
+#close
+{
+    cursor: pointer;
 }
