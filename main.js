@@ -49,5 +49,5 @@ var googleUser = {};
         }, function(error) {
          alert(JSON.stringify(error, undefined, 2));
         });
-  }
+  } 
 
