@@ -68,13 +68,22 @@
     border: #00000000;
     cursor: pointer;
 }
-#review
+#review_cong
 {
-    text-align: center;
-    margin-top:8%;
-    margin-left:18%;
+    /* text-align: center; */
+    margin-top:10%;
+    margin-left:28%;
     margin-right: 10%;
     padding: 10px;
+}
+#review_bjp
+{
+    /* text-align: center; */
+    margin-top:10%;
+    margin-left:28%;
+    margin-right: 10%;
+    padding: 10px;
+   
 }
 /* label color */
 .input-field label {
@@ -123,3 +132,41 @@
       width:140px;
       font-size: 17px !important;
   }
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    width: 158.6px;
+    margin-top: 7%;
+    margin-left: 8%;
+    position: absolute;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fdb450;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

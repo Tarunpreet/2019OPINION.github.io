@@ -27,3 +27,15 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
   opinion.logOut=logOut;
 })()
+
+//
+function openCity()
+{
+  document.getElementById('review_bjp').display='none';
+  document.getElementById('review_cong').display='block';
+}
+function openCity1()
+{
+  document.getElementById('review_bjp').display='block';
+  document.getElementById('review_cong').display='none';
+}
