@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+      html
+      {
+          margin: 0;
+          padding:0;
+          height: 100%;
+          width: 100%;
+          position: relative;
+       }
+       #container
+  {
+    min-height: 100%;
+    min-width: 100%;
+    /* border:2px solid black; */
+    margin: 0;
+          padding:0;
+  }
+       body
+       {
+      background-color: #FFFFFF; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+          padding:0;
+          height: 100%;
+          width: 100%;
+          position: relative; 
+  
+       }
+       #navbar
+       {
+  
+  /* Rectangle 3: */
+  /* opacity: 0.42;
+  background-image:url(images/group.jpg); */
+  /* Rectangle 3: */
+  /* Rectangle 3: */
+  background:#FDB450;
+  box-shadow: 0 7px 8px 6px #000000;
+  min-width: 100%;
+  max-width: 100%;
+    display:block;
+    margin-left: 0%;
+   margin:0%;
+   text-decoration: none;
+  
+       }
+       #navbar>li {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 1%;
+    padding-right: 0%;
+    margin-right: 0%;
+    opacity: 1.0;
+   
+  }
+
+  #open
+{
+    background-color:#00000000;
+    color: #ffffff;
+    border: #00000000;
+    cursor: pointer;
+}
+#review
+{
+    text-align: center;
+    margin-top:8%;
+    margin-left:18%;
+    margin-right: 10%;
+    padding: 10px;
+}
+/* label color */
+.input-field label {
+    color: rgb(102, 101, 101) !important;
+    font-size: 22px !important;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #fdb450 !important;
+    font-size: 30px !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 4px solid #fdb450 !important;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+  }
+  .materialize-textarea
+  {
+    border-bottom: 1px solid #000 !important;
+  }
+  .materialize-textarea:focus
+  {
+    border-bottom: 4px solid #fdb450 !important;
+  }
+.materialize-textarea
+  {
+    color: black!important;
+    font-size: 20px !important;
+  }
+  .btn 
+  {
+      background-color: #fdb450 !important;
+      width:140px;
+      font-size: 17px !important;
+  }

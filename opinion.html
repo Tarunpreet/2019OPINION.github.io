@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,9 +6,62 @@
     <title>Opinion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="opinion.css" />
-    <script src="opinion.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
 </head>
-<body>
+<body style="background-image:url(opinion_back.png)">
+        <div id="container">
+        <ul >
+                <div id="navbar">
+                  <li><a href="main.html" style="font-family: AmericanTypewriter;font-size: 40px;color: #FFFFFF;
+                      text-shadow: 4px 4px 2px rgba(0,0,0,0.50);opacity: 1.0;text-decoration: none;">2019 OPINION</a>
+                  </li>
+                  <li style="margin-left:50%; "><a href="main.html" style="font-family: AmericanTypewriter-Semibold;font-size: 29px;letter-spacing: -1.12px; margin-right: 14%; text-decoration: none;color: #FFFFFF;">ABOUT</a></li>
+                 <li style="margin-left:2%;"><a href="results.html" style="font-family: AmericanTypewriter-Semibold;font-size: 29px;letter-spacing: -1.12px;text-decoration: none;color: #FFFFFF;">RESULTS</a></li>
+                  <li style="margin-left:2%;"><button id="open" style="font-family: AmericanTypewriter-Semibold;font-size: 29px;letter-spacing: -1.12px;text-decoration: none;"onclick="opinion.logOut()">SIGN OUT</button></li>
+               </div>
+                
+      </ul>
+      <h5 style="position:absolute;padding-top:29%;padding-left: 10%; color: #fdb450;font-size:29px;" > BJP: </h5>
+      <h5 style="position:absolute;padding-top:10%;padding-left: 5%; color: #fdb450;font-size:29px;" > CONGRESS: </h5>
+      <div id="review">
+            <form>
+                
+             <div class="input-field">
+                 
+                 <input id="review_cong" type="text">
+                 <label for="review_cong"style="padding-top:0px;">Review</label>
+            
+             </div> 
+             <div class="input-field">
+                    <input id="review_bjp" type="text" style="padding-top:210px;">
+                    <label for="review_bjp" style="padding-top:190px;">Review</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action" onclick="newfun()" style="margin-top:60px;margin-left: 2px;">Submit
+                        <i class="material-icons right">send</i>
+                      </button> 
+         </form>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <button onclick="opinion.logOut()">logOut</button> -->
+    <script src="firebase.js"></script>
+    <script src="opinion.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
 </body>
 </html>
