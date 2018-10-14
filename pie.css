@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
   }
@@ -13,7 +13,7 @@
   {
     min-height: 100%;
     min-width: 100%;
-    /* border:2px solid black; */
+    /* border:2px solid black;  */
     margin: 0;
           padding:0;
 
@@ -62,51 +62,13 @@
   }
   #bjp
   {
-   
-            font-size: 30px;
-            font-family: AmericanTypewriter-Bold;
-            color: #FFFFFF;
-            letter-spacing: -1.46px;
-            margin-top: 10%;
-            margin-left:15%;
-            position: absolute;
+    margin-left:23%;
+    margin-top:45%;
+    position: absolute;
   }
-  #congress
+  #cong
   {
-   
-            font-size: 30px;
-            font-family: AmericanTypewriter-Bold;
-            color: #FFFFFF;
-            letter-spacing: -1.46px;
-            margin-top: 10%;
-            margin-left:66%;
-            
-  }
-  .bg-modal
-  {
-      width: 100%;
-      height: 120%;
-      background-color: rgba(0,0,0,0.7);
-      position: absolute;
-      top:0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-  
-  
-  box-shadow: 11px 14px 6px 4px rgba(0,0,0,0.50);
-  display: none;
-  }
-  .bg-content
-  {
-      width: 340px;
-      height: 50%;
-      background-image: url(back.png);
-      /* background-color:#FFFFFF; */
-      /* box-shadow: 9px 11px 6px 4px rgba(0,0,0,0.50);
-      border-radius: 1.3%; */
-      text-align: center;
-      padding: 40px;
-      position: relative;
+    margin-left:72%;
+    margin-top:3%;
+    position: absolute
   }

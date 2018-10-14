@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="pie.css" />
+    <title>Results</title>
+</head>
+<body>
+    <div id="container">
+                    <ul >
+                            <div id="navbar">
+                              <li><a href="main.html" style="font-family: AmericanTypewriter;font-size: 40px;color: #FFFFFF;
+                                  text-shadow: 4px 4px 2px rgba(0,0,0,0.50);opacity: 1.0;text-decoration: none;">2019 OPINION</a>
+                              </li>
+                              <li style="margin-left:45%; "><a href="main.html" style="font-family: AmericanTypewriter-Semibold;font-size: 29px;letter-spacing: -1.12px; margin-right: 14%; text-decoration: none;color: #FFFFFF;">ABOUT</a></li>
+                              <li style="margin-left:2%;"><a href="opinion.html" style="font-family: AmericanTypewriter-Semibold;font-size: 29px;letter-spacing: -1.12px;text-decoration: none;color: #FFFFFF;">OPINION</a></li>
+                              <li style="margin-left:2%;"><a href="results.html" style="font-family: AmericanTypewriter-Semibold;font-size: 29px;letter-spacing: -1.12px;text-decoration: none;color: #FFFFFF;">RESULTS</a></li>
+                              </div>
+                            
+                  </ul>
+            <div id="canvas-holder" style="width:30%;margin-top:12% ;margin-left:10%;position: absolute; ">
+                    <canvas id="chart" width="50px" height="50px" />
+            </div>
+            <div id="bjp">
+                    
+            </div>
+            <div id="canvas-holder1" style="width:30%;margin-top:12.5% ;margin-left:60%; ">
+                <canvas id="chart1" width="50px" height="50px" />
+            </div>
+            <div id="cong">
+                    
+           </div>
+    </div>
+    <script>
+        var arr1;
+        let mychart=document.getElementById('chart').getContext('2d');
+        Chart.defaults.global.defaultFontSize=16;
+        Chart.defaults.global.defaultFontColor='#ffff';
+        // Chart.defaults.global.legend.display = false;
+        arr1=fetch('https://opinion-2019.herokuapp.com/bjp')
+        .then((res)=> res.json())
+        .then((data)=>{
+        var arr = Object.keys(data).map(function(_) { return data[_]; })
+        arr[3]=arr[3].toFixed(2);
+        arr[4]=arr[4].toFixed(2);
+   
+    let piechart=new Chart(mychart,{
+        type:'pie',
+        data:{
+            labels:['Positive','Negative'],
+            datasets:[
+                {
+                    label:'Review',
+                    data:[arr[3],arr[4]],
+                    backgroundColor:['#3354a1','#d93025']
+                }
+            ]
+        }
+
+        });
+        let output=`
+               <h5>BJP</h5>
+                `
+        document.getElementById('bjp').innerHTML=output;
+    });
+
+    let mychart1=document.getElementById('chart1').getContext('2d');
+      fetch('https://opinion-2019.herokuapp.com/cong')
+        .then((res)=> res.json())
+        .then((data)=>{
+        var arr = Object.keys(data).map(function(_) { return data[_]; })
+        arr[3]=arr[3].toFixed(2);
+        arr[4]=arr[4].toFixed(2);
+   
+    let piechart1=new Chart(mychart1,{
+        type:'pie',
+        data:{
+            labels:['Positive','Negative'],
+            datasets:[
+                {
+                    label:'Review',
+                    data:[arr[3],arr[4]],
+                    backgroundColor:['#3354a1','#d93025']
+                }
+            ]
+        }
+
+        });
+        let output=`
+               <h5>CONGRESS</h5>
+                `
+        document.getElementById('cong').innerHTML=output;
+    });
+    </script>
+</body>
+
+</html>
