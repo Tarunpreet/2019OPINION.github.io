@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+      html
+      {
+          margin: 0;
+          padding:0;
+          height: 100%;
+          width: 100%;
+      }
+       #container
+  {
+    min-height: 100%;
+    min-width: 100%;
+    /* border:2px solid black; */
+    margin: 0;
+          padding:0;
+
+  }
+       body
+       {
+        background-image:url('images/Rectangle.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+          padding:0;
+          height: 100%;
+          width: 100%;
+          position: relative; 
+  
+       }
+       #navbar
+       {
+  
+  /* Rectangle 3: */
+  /* opacity: 0.42;
+  background-image:url(images/group.jpg); */
+  /* Rectangle 3: */
+  /* Rectangle 3: */
+  background:rgba(159, 185, 13, 0.062);
+  box-shadow: 0 7px 8px 6px #000000;
+  min-width: 100%;
+  max-width: 100%;
+    display:block;
+    margin-left: 0%;
+   margin:0%;
+   text-decoration: none;
+  
+       }
+       #navbar>li {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 1%;
+    padding-right: 0%;
+    margin-right: 0%;
+    opacity: 1.0;
+   
+  }
+  #bjp
+  {
+   
+            font-size: 30px;
+            font-family: AmericanTypewriter-Bold;
+            color: #FFFFFF;
+            letter-spacing: -1.46px;
+            margin-top: 10%;
+            margin-left:18%;
+            position: absolute;
+  }
+  #congress
+  {
+   
+            font-size: 30px;
+            font-family: AmericanTypewriter-Bold;
+            color: #FFFFFF;
+            letter-spacing: -1.46px;
+            margin-top: 10%;
+            margin-left:66%;
+            
+  }
