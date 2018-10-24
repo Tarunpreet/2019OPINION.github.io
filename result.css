@@ -80,7 +80,7 @@
             letter-spacing: -1.46px;
             margin-top: 10%;
             margin-left:66%;
-            
+            position:absolute;
   }
   .bg-modal
   {
@@ -89,7 +89,7 @@
       background-color: rgba(0,0,0,0.7);
       position: absolute;
       top:0;
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       
@@ -100,7 +100,7 @@
   }
   .bg-content
   {
-      width: 340px;
+      width: 440px;
       height: 50%;
       background-image: url(back.png);
       /* background-color:#FFFFFF; */
@@ -110,3 +110,28 @@
       padding: 40px;
       position: relative;
   }
+  #results
+  {
+      margin-top: 45%;
+      margin-left: 45%;
+      position: relative;
+      padding: 11px 65px;
+      border-radius: 15px;
+      background-color: #00000000;
+      border: #FFFFFF 2px solid;
+      display: none;
+      cursor: pointer;
+  font-size: 26px;
+  }
+  #results:hover
+  {
+    border-color: rgb(0, 247, 255);
+  }
+  #cut
+{
+    position: absolute;
+    top:4%;
+    right:2%;
+    width: 27px;
+    
+}
