@@ -24,7 +24,6 @@ function takevalue_bjp()
                   <br>
                   <li>Total Reviews: ${ arr[1]+arr[2]}</li>
                   <br>
-                  <li>Opinion: ${arr[0]}</li>
                 </ul>
                 `
     
@@ -53,7 +52,6 @@ function takevalue_cong()
                   <br>
                   <li>Total Reviews: ${ arra[1]+arra[2]}</li>
                   <br>
-                  <li>Opinion: ${arra[0]}</li>
                 </ul>
                 `
         //     let changing=`<h3>* Results are continously changing......</h3>
@@ -86,17 +84,26 @@ function results()
           if(winner==="Congress")
           {
             document.getElementById('rahul').style.display='inline';
-           
+            changing=`<h2>${winner} is Winning Till Now<h2><br>
+            <h3>* Results are continously changing......</h3>
+           <h3>* The Final Result will be available on 10 JANUARY 2019</h3>`
           }
-          if(winner==="BJP")
+          else if(winner==="BJP")
           {
             document.getElementById('modi').style.display='inline';
-           
+            changing=`<h2>${winner} is Winning Till Now<h2><br>
+            <h3>* Results are continously changing......</h3>
+            <h3>* The Final Result will be available on 10 JANUARY 2019</h3>`
+          }
+          else
+          {
+              changing=`<h2>The Result is Draw at The Moment<h2>
+              <h3>* Results are continously changing......</h3>
+              <h3>* The Final Result will be available on 10 JANUARY 2019</h3>
+              `
           }
 
-         changing=`<h2>${winner} is Winning Till Now<h2><br>
-         <h3>* Results are continously changing......</h3>
-        <h3>* The Final Result will be available on 10 JANUARY 2019</h3>`
+        
         document.getElementById('who_won').innerHTML=changing;
     })
 }
