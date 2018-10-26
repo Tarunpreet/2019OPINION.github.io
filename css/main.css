@@ -20,7 +20,7 @@
   }
        body
        {
-      background: url(images/wall2.jpg) no-repeat center center fixed; 
+      background: url(../images/wall2.jpg) no-repeat center center fixed; 
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -97,7 +97,7 @@ display: none;
 {
     width: 340px;
     height: 50%;
-    background-image: url(back.png);
+    background-image: url(../images/back.png);
     /* background-color:#FFFFFF; */
     /* box-shadow: 9px 11px 6px 4px rgba(0,0,0,0.50);
     border-radius: 1.3%; */

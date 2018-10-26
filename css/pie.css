@@ -20,7 +20,7 @@
   }
        body
        {
-        background-image:url('images/Rectangle.jpg');
+        background-image:url('../images/Rectangle.jpg');
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
